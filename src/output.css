@@ -12,6 +12,7 @@
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-800: oklch(42.4% 0.199 265.638);
+    --color-blue-900: oklch(37.9% 0.146 265.522);
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --default-font-family: var(--font-sans);
@@ -198,6 +199,9 @@
   }
   .text-blue-800 {
     color: var(--color-blue-800);
+  }
+  .text-blue-900 {
+    color: var(--color-blue-900);
   }
   .underline {
     text-decoration-line: underline;
