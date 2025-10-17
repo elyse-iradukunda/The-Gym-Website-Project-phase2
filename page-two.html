@@ -25,8 +25,9 @@
 
 <body>
     <div id="header"></div>
-    <div id="hero"></div>
-    <div id="contact"></div>
+    <div id="page-two-content"></div>
+   
+ 
     <div id="footer"></div>
     <script defer src="/src/js/nav.js"></script>
     <script>
@@ -45,14 +46,14 @@
             if (window.initNav) window.initNav();
 
             // load the rest (can be async)
-            loadComponents('header', 'src/sections/header.html');
-            loadComponents('hero', 'src/sections/hero.html');
-            loadComponents('services', 'src/sections/service.html');
-             loadComponents('contact', 'src/sections/contact.html');
+    
+        loadComponents('page-two-content', 'src/sections/page-two-content.html');
+           
+     
             loadComponents('footer', 'src/sections/footer.html');
         }
     </script>
-
+   
      
     </body>
 
