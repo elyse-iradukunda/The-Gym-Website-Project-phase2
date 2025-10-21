@@ -40,12 +40,11 @@
         }
 
         window.onload = async () => {
-            // load navbar first so scripts can attach
+          
             await loadComponents('navbar', 'src/sections/navBar.html');
-            // init nav handlers that expect elements inside the injected navbar
+           
             if (window.initNav) window.initNav();
 
-            // load the rest (can be async)
     
         loadComponents('page-two-content', 'src/sections/page-two-content.html');
            
