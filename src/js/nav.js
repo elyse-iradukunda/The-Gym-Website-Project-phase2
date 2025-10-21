@@ -20,7 +20,7 @@ function initNav() {
         console.log('menu opened');
     });
 
-    // close and open the menu on the small screen
+
     ci.addEventListener('click', () => {
         menu.classList.toggle('max-lg:hidden');
         mi.classList.toggle('hidden');
@@ -29,7 +29,6 @@ function initNav() {
     });
 }
 
-// expose globally so index.html can call it after injection
 window.initNav = initNav;
 
 
