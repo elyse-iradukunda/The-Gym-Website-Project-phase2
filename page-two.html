@@ -25,7 +25,7 @@
 
 <body>
     <div id="header"></div>
-    <div id="page-three-content"></div>
+    <div id="page-two-content"></div>
    
  
     <div id="footer"></div>
@@ -40,14 +40,13 @@
         }
 
         window.onload = async () => {
-           
+          
             await loadComponents('navbar', 'src/sections/navBar.html');
            
             if (window.initNav) window.initNav();
 
-          
     
-        loadComponents('page-three-content', 'src/sections/pagethree-content.html');
+        loadComponents('page-two-content', 'src/sections/page-two-content.html');
            
      
             loadComponents('footer', 'src/sections/footer.html');
