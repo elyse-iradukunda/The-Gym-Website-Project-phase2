@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body class=" mx-auto overflow-x-hidden w-320">
+<body class="overflow-x-hidden">
 
     
 
@@ -23,10 +23,11 @@
     <div id="services"></div>
 
 
-
+<body>
     <div id="header"></div>
-    <div id="hero"></div>
+    <div id="page-three-content"></div>
    
+ 
     <div id="footer"></div>
     <script defer src="/src/js/nav.js"></script>
     <script>
@@ -39,20 +40,20 @@
         }
 
         window.onload = async () => {
-            // load navbar first so scripts can attach
+           
             await loadComponents('navbar', 'src/sections/navBar.html');
-            // init nav handlers that expect elements inside the injected navbar
+           
             if (window.initNav) window.initNav();
 
-            // load the rest (can be async)
-            loadComponents('header', 'src/sections/header.html');
-            loadComponents('hero', 'src/sections/hero.html');
-            loadComponents('services', 'src/sections/service.html');
+          
+    
+        loadComponents('page-three-content', 'src/sections/pagethree-content.html');
            
+     
             loadComponents('footer', 'src/sections/footer.html');
         }
     </script>
-
+   
      
     </body>
 
